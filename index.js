@@ -1,3 +1,5 @@
+//DESAFIO 1
+
 function msg (nome, exp) {
     let nivel
 
@@ -23,3 +25,29 @@ function msg (nome, exp) {
 }
 
 console.log(msg("zLordelo", 8100))
+
+//DESAFIO 2
+
+function msgRankeada (sldVitorias) {
+    let nivel
+
+    if (sldVitorias <= 10) {
+        nivel = "Ferro"
+    } else if (sldVitorias <= 20) {
+        nivel = "Bronze"
+    } else if (sldVitorias <= 50) {
+        nivel = "Prata"
+    } else if (sldVitorias <= 80) {
+        nivel = "Ouro"
+    } else if (sldVitorias <= 90) {
+        nivel = "Diamante"
+    } else if (sldVitorias <= 100) {
+        nivel = "Lendário"
+    } else {
+        nivel = "Imortal"
+    }
+
+    return "O héroi tem saldo de " + sldVitorias + " vitórias e está no nível " + nivel
+}
+
+console.log(msgRankeada(50))
